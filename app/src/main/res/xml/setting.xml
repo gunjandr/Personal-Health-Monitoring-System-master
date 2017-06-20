@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell_pc.health_first.userSettingActivity">
+    <PreferenceCategory android:title="Settings" >
+        <SwitchPreference
+            android:title="Communication"
+            android:key="enable"
+            android:summary="Enable Communication ?"/>
+
+        <ListPreference
+            android:title="Method of Communication"
+            android:summary="Set your method"
+            android:key="prefUpdate"
+            android:entries="@array/communication"
+            android:entryValues="@array/communicationValues"/>
+
+        <EditTextPreference
+            android:title="Emergency Contact Number"
+            android:summary="Set Your Emergency Phone Number"
+            android:key="prefUserPhone"/>
+        <EditTextPreference
+            android:title="Emergency Email Address"
+            android:summary="Set Your Emergency Email Address"
+            android:key="prefUserEmail"/>
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
